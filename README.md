@@ -6,7 +6,7 @@
 可以直接部署到heroku中
 
 ```bash
-git clone https://github.com/Hsiny/google-in-heroku.git
+git clone https://github.com/alance123/google-in-heroku.git
 cd google-in-heroku
 heroku create
 git add -A
