@@ -1,6 +1,6 @@
 import os
 from wsgiref.simple_server import make_server
-import urllib2
+import urllib
 def application(environ,start_response):
 
     googleUrl="https://www.google.com"
@@ -15,7 +15,7 @@ def application(environ,start_response):
 
 
     try:
-        opener=urllib2.build_opener()
+        opener=urllib.request.build_opener()
         opener.addheaders=[('User-agent', userAgent)]
         opener.addheaders=[('Accept',httpAccept)]
         html=opener.open(googleUrl+requestUrl).read()
